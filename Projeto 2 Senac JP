@@ -1,0 +1,28 @@
+import java.util.Scanner;
+// faça um algoritmo que leia 2 numeros e realize as 4 operações matemáticas basicas entre eles(+-*/)
+
+public class Calculadora {
+    public static void main(String[] args) throws Exception {
+        Scanner scanner = new Scanner(System.in);
+
+        double num1;
+        double num2;
+
+        System.out.println("Digite o primeiro número: ");
+        num1 = scanner.nextDouble();
+
+        System.out.println("Digite o segundo número: ");
+        num2 = scanner.nextDouble();
+
+        double soma = num1 + num2;
+        double subtracao = num1 - num2;
+        double multiplicacao = num1 * num2;
+        double divisao = num1 / num2;
+
+        System.out.println("Então os resultados serão: ");
+        System.out.println("Soma: " + soma);
+        System.out.println("Subtração: " + subtracao);
+        System.out.println("Multiplicação: " + multiplicacao);
+        System.out.println("Divisão: " + divisao);
+
+        scanner.close();
